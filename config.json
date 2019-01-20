@@ -1,4 +1,7 @@
 {
+    "sqs": {
+        "queue": "littleblackpill.fifo"
+    },
     "default_pause": 1,
     "devices": {
         "receiver": {

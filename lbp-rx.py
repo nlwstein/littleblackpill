@@ -84,5 +84,5 @@ class BroadlinkQueueListener(SqsListener):
             print "Something went wrong :( Device: " + parameters['device'] + " Action: " + parameters['action'] + " Message: " + str(e)
 
 
-listener = BroadlinkQueueListener('littleblackpill.fifo', region_name='us-east-1', wait_time=20, interval=0)
+listener = BroadlinkQueueListener(config['sqs']['queue'], region_name='us-east-1', wait_time=20, interval=0)
 listener.listen()
