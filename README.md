@@ -13,4 +13,4 @@ Uses:
 
 Note: 
 
-The Firebase function that gets fired on my Assistant is in google-assistant/firebaseFulfillment. 
+The Firebase function that gets fired on my Assistant is in google-assistant/firebaseFulfillment.
