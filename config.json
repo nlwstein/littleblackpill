@@ -14,7 +14,8 @@
         ]
     },
     "sqs": {
-        "queue": "littleblackpill.fifo"
+        "queue": "littleblackpill.fifo",
+        "region_name": "us-east-1"
     },
     "default_pause": 1,
     "devices": {

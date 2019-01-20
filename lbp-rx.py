@@ -96,5 +96,5 @@ class BroadlinkQueueListener(SqsListener):
             print tb
 
 
-listener = BroadlinkQueueListener(config['sqs']['queue'], region_name='us-east-1', wait_time=20, interval=0)
+listener = BroadlinkQueueListener(config['sqs']['queue'], region_name=config['sqs']['region_name'], wait_time=20, interval=0)
 listener.listen()
