@@ -1,0 +1,55 @@
+{
+    "default_pause": 1,
+    "devices": {
+        "receiver": {
+            "actions": {
+                "volume_down": "dfb3a569d82162bec4ffe302fd9702ef629d2d07fdd41ece63ef72ba2c812b188eebdddb1b606f8b5493d08e344366d8758822e57934d8ec13c349d132da7793a11b69308c87e31be75b019f9c8a8e8cfd74e18fcfcc7ffced434d9cd008230cacd11a1da9b5aa93bfe7e3b6bed37015b6cb947cdb6f93ae864ad7fb311a2249bc953ff2ef1b4a4b3602b2f921c6297ef8f924e5804d3b6258caab24a6d8352703e82c9f3efb17c8432574f88de954c6cecc5bbf6c47fbb0e5b68049d4f98bec13c349d01cac3f65d4167ca8a950202c631972824e32edeba06d7a690a33f8417378e60e3c54a7b827a6ed1b4a4b3602bdf08eb77f191b10120f73d8",
+                "volume_up": "dfb3876952740dcc018b45f47ac96867abba2543b5f99088cfb63e62aab5756f4a4b3602b2edabd7edf236f8122bfba2adaa34f0f4c49b272bb67ef1bdca2af9a339a6f3c80ed51110b2a93b4ed80b8db1acc97ce6d92c780ef8257b140578e502fc0a6e6f4b3602b2ea52b895c5efce57b2975d89b3fcd15ea972c1a8cbd92a3daf607fee7f7c53e9e62efd98e7a356200cfd7dbd20658f7c508f3350b67cc349d01cac3f65d4167ca8a950203f3e6903fa764c70a73f3e7dd0e55529c9503f6a0eb6a6134fcfa47db4726627ad88e38eb77f191b10120f73d86706",
+                "power": "dfb32d35075139f90f8931e39be35229f08244e4b936429f18e5a3453e3bb760194c7516b35e7c9a790a589b3127ef50d137f51005121bd36bb85235606b503337d9dbd8c98b3151a7ef588a9e2e85b44aa88f55d91202c7b936429e33b6140cacd0e454a496c80eda52611e",
+                "pc": "dfb3e11d72f2acae8478200e7005691dbd3f4c634173ce911bd6640817da3304df308c87e30f7bd3df80d0a01f2d3ccd3b9d6ffdbc69fc4c7fa09b40df38b2d62c8d4af92368b65bf51fa6361027a14873558d56471ddccf1f9357d1e96678e818cf8b0099d8c98b3145580eb0de858862750e04918361ab1f0860ddfdf2acc0bbbd09c75c8a6d2574f88dfd998426303bb943a4fecbe09d6ffdbc69fc4c7fa09b40df38b2d62c8d4af92368b925b92ebdea55a8e94816ebb3b4f632",
+                "bluetooth": "dfb3973fc108ff0cc57f3dd03a76a0852539858a5f39fb00902159da779395acb0255f3adf5e5601cabb11418835a318fb57662902ba0acf3c944112f11c9f1bde5f290dc2e3bea3b18fa76cd33c8a61fc2f25cb0eb888142325d82eec21a51fd357bafa4408e1304c451e5175b965b75a35606b50330379a680318c25289bac82ec7c624b39548f7b666ed34d4b74268d706d6d82ed826b521afb00902159da779392f2cc8bf4b6f96cb3f22aab0209c40b23d3aacda3eebf67bf3a06934530227f7354367eaaa026c147abbde5f8773ab157dd0e628e0a878eae71bc29eb1e3946f9614e0eca4816ebb3b4"
+            },
+            "action_mapping": {
+                "bluetooth": "bluetooth",
+                "pc": "pc",
+                "power": "power",
+                "power on": "power",
+                "power off": "power",
+                "turn on": "power",
+                "turn off": "power",
+                "volume up": "volume_up",
+                "volume down": "volume_down"
+            }
+        },
+        "tv": {
+            "actions": {
+                "volume_up": "dfb31b7843857a7e3ec60df1bbaf2268b5111bbfe244624c35007c82dda8498d8eb9ebf1556d6d2287cab030e98e102f39f0c53c4d8955b8291a62823c8a862a868243c2cd0c4538c221f8bc0a855b93a861c91053516ed9eeb8fc95",
+                "volume_down": "dfb30380ce7ba282665b03822575fb52cab23fde070b8e1035007c82dda8498d8eb9e86b2a4b2c3b46d9c219692c9d7fcd69644a1bf324ddc2aa28ac205326579b4f288015e1c7b1406b16ae",
+                "power": "dfb30380ce7ba114217fc420ebd7547c17f8a3bfe244624c35007c82dda8498d8eb9e86b29413ade7de2bd0c1682852f55dc870dee6962fda4e3f6578b9422054c8c64634df272c864bd8108",
+                "next_input": [
+                    "dfb31b7843857a7e3ec60df1bbaf2268b5111bbfe244624c35007c82dda8498d8eb9e86b29413ade7dc915dede6f3452adb7c6bf4ecab831108b06ffb7bc2a823c8a862a868243c2cd34ca6838b317737e1c385486d70cea2d4e736c",
+                    "$PAUSE$1",
+                    "dfb31b7843857a7e3ec60df1bbaf2268b5111bbfe244624c35007c82dda8498d8eb9e86b29413ade7dc915dede6f3452adb7c6bf4ecab831108b06ffb7bc2a823c8a862a868243c2cd34ca6838b317737e1c385486d70cea2d4e736c",
+                    "$PAUSE$1",
+                    "dfb31b7843857b0eb0185f5dd32bb9234bca205bdbea534e35007c82dda8498d8eb9ebf1556d6d2287cda0fd5b6fb29f3f809c2675813c863c394f544078f57d2c084384f397668303b4d253ba428151265357a67d54222c5984df63"
+                ]
+            },
+            "action_mapping": {
+                "volume up": "volume_up",
+                "volume down": "volume_down",
+                "power": "power",
+                "turn on ": "power",
+                "turn off": "power",
+                "next input": "next_input",
+                "input": "next_input"
+            }
+        }
+    },
+    "device_mapping": {
+        "reciever": "receiver",
+        "receiver": "receiver",
+        "sony receiver": "receiver",
+        "sony reciever": "receiver",
+        "tv": "tv"
+    }
+}
