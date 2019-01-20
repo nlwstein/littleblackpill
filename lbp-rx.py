@@ -5,6 +5,7 @@ import json
 import broadlink
 import binascii
 import base64
+import traceback
 from time import sleep
 from sqs_listener import SqsListener
 from Crypto.Cipher import AES
@@ -28,8 +29,17 @@ logger.addHandler(sh)
 # END SQS LOGGING
 
 # BROADLINK INIT: 
-devices = broadlink.discover(timeout=1)
-print devices
+devices = []
+
+if len(config['broadlink']['devices']) > 0: 
+    for device_config in config['broadlink']['devices']: 
+        print device_config
+        mac_address = device_config['mac'].replace(':', '').decode('hex')
+        _device = broadlink.gendevice(device_config['devtype'], (device_config['host']['ip'], device_config['host']['port']), mac_address)
+        devices.append(_device)
+else: 
+    devices = broadlink.discover(timeout=config['broadlink']['discover_timeout'])
+
 print "broadlink init!"
 
 class BroadlinkQueueListener(SqsListener):
@@ -82,6 +92,8 @@ class BroadlinkQueueListener(SqsListener):
             self.perform_action_on_device(parameters['device'], parameters['action'], parameters['qty'])
         except Exception, e:
             print "Something went wrong :( Device: " + parameters['device'] + " Action: " + parameters['action'] + " Message: " + str(e)
+            tb = traceback.format_exc()
+            print tb
 
 
 listener = BroadlinkQueueListener(config['sqs']['queue'], region_name='us-east-1', wait_time=20, interval=0)
