@@ -2,6 +2,7 @@ import os
 import logging
 import sys
 import json
+import traceback
 from lbp import littleblackpill
 from sqs_listener import SqsListener
 
@@ -24,14 +25,15 @@ logger.addHandler(sh)
 # END SQS LOGGING
 
 class BroadlinkQueueListener(SqsListener):
-    def __init__(self):
+    def __init__(self, queue, region_name, wait_time, interval):
+        SqsListener.__init__(self, queue, region_name=region_name, wait_time=wait_time, interval=interval)
         self.lbp = littleblackpill()
 
     def handle_message(self, body, attributes, messages_attributes):
         parameters = body['queryResult']['parameters']
         print parameters['device']
         try: 
-            lbp.perform_action_on_device(parameters['device'], parameters['action'], parameters['qty'])
+            self.lbp.perform_action_on_device(parameters['device'], parameters['action'], parameters['qty'])
         except Exception, e:
             print "Something went wrong :( Device: " + parameters['device'] + " Action: " + parameters['action'] + " Message: " + str(e)
             tb = traceback.format_exc()
