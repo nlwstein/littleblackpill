@@ -37,7 +37,9 @@
                 "turn on": "power",
                 "turn off": "power",
                 "volume up": "volume_up",
-                "volume down": "volume_down"
+                "volume down": "volume_down",
+                "volume_up": "volume_up",
+                "volume_down": "volume_down"
             }
         },
         "tv": {
