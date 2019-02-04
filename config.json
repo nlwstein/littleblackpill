@@ -30,6 +30,7 @@
             "action_mapping": {
                 "bluetooth": "bluetooth",
                 "pc": "pc",
+                "computer": "pc",
                 "power": "power",
                 "power on": "power",
                 "power off": "power",
@@ -55,10 +56,13 @@
             "action_mapping": {
                 "volume up": "volume_up",
                 "volume down": "volume_down",
+                "volume_up": "volume_up",
+                "volume_down": "volume_down",
                 "power": "power",
                 "turn on ": "power",
                 "turn off": "power",
                 "next input": "next_input",
+                "next_input": "next_input",
                 "input": "next_input"
             }
         }
